@@ -104,58 +104,108 @@ nav li {
 }
 
 .page3 .cards {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-}
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    border-radius: 20px;
+    width: calc(40% - 2rem);
+    height: 35vh;
+    background-position: center;
+    position: relative;
+  }
+  
+  .page3 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .page3 .cards .card1 {
+    background-image: url(img/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .page3 .cards .card2 {
+    background-image: url(img/14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .page3 .cards .card3 {
+    background-image: url(img/17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .page3 .cards .card4 {
+    background-image: url(img/12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .article {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    display: none; /* Hide the articles by default */
+    margin-bottom: 2rem;
+  }
 
-.card1 {
-  border-radius: 20px;
-  width: 40vw;
-  height: 25vh;
-  background-position: center;
-}
-.page3 p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.page3 .cards .card1 {
-  background-image: url(img/10.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* width: 50vw;
-  height: 25vh;
-  height: 800px; */
-}
-
-.page3 .cards .card2 {
-  background-image: url(img/14.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 800px;
-}
-
-.page3 .cards .card3 {
-  background-image: url(img/17.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 800px;
-}
-
-.page3 .cards .card4 {
-  background-image: url(img/12.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 800px;
-}
+  .article {
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .article-header {
+    text-align: center;
+  }
+  
+  .article-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .left-image,
+  .right-image {
+    width: 25%;
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  .center-image {
+    width: 50%;
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  
+  .article-content {
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto;
+    margin-top: 1em;
+    
+  }
+  
