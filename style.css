@@ -8,13 +8,27 @@ body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   background-color: black;
-
-  /*Making the Leaf Image as the fixed background */
-  background-image: url("img/Monstera.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  position: relative; /* Add this line to set the position context for the ::before element */
 }
 
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Monstera.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1; /* Set the z-index to -1 to ensure it stays below the page content */
+}
+
+
+body p {
+  font-size: 1.2rem;
+
+}
 /* page 1 */
 
 header {
@@ -79,7 +93,6 @@ nav li {
 }
 
 .page2 p {
-  font-size: 1.6rem;
   max-width: 60ch;
 }
 
@@ -100,7 +113,7 @@ nav li {
   width: 100%;
   min-height: 100vh;
   margin-top: 2em;
-  background-color: black;
+  
 }
 
 .page3 .cards {
@@ -130,8 +143,6 @@ nav li {
     right: 0;
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
   }
