@@ -98,7 +98,7 @@ nav li {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 2em;
   background-color: black;
 }
@@ -125,7 +125,6 @@ nav li {
   }
   
   .page3 p {
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -135,6 +134,10 @@ nav li {
     font-weight: 700;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .card-title {
+    position: absolute;
   }
   
   .page3 .cards .card1 {
@@ -174,11 +177,16 @@ nav li {
     background-color: black;
     color: white;
     padding: 2rem;
-  }
+    width: 100%;
+  }  
   
   .article-header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
+  
   
   .article-images {
     display: flex;
@@ -189,17 +197,20 @@ nav li {
   
   .left-image,
   .right-image {
-    width: 25%;
-    max-height: 30vh;
+    max-width: 20vw;
+    max-height: 20vh;
     object-fit: cover;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
   
   .center-image {
-    width: 50%;
-    max-height: 30vh;
+    max-width: 40vw;
+    height: 40vh;
     object-fit: cover;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
-  
   
   .article-content {
     text-align: center;
@@ -208,4 +219,9 @@ nav li {
     margin-top: 1em;
     
   }
-  
+
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
