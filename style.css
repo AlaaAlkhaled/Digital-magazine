@@ -13,8 +13,26 @@ body {
   background-attachment: fixed;
   background-size: cover;
   min-width: 460px;
+  position: relative; /* Add this line to set the position context for the ::before element */
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/Monstera.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1; /* Set the z-index to -1 to ensure it stays below the page content */
+}
+
+body p {
+  font-size: 1.2rem;
+}
 /* page 1 */
 
 header {
@@ -79,7 +97,6 @@ nav li {
 }
 
 .page2 p {
-  font-size: 1.6rem;
   max-width: 60ch;
 }
 
@@ -100,7 +117,6 @@ nav li {
   width: 100%;
   min-height: 100vh;
   margin-top: 2em;
-  background-color: black;
 }
 
 .page3 .cards {
@@ -111,6 +127,27 @@ nav li {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  border-radius: 20px;
+  width: calc(40% - 2rem);
+  height: 35vh;
+  background-position: center;
+  position: relative;
+}
+
+.page3 p {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .card1,
@@ -240,4 +277,24 @@ nav li {
 
 .eira img {
   width: 50vw;
+}
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.secondArticle-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align images to the bottom */
+  position: relative; /* Make this container relative so the article content can be positioned relative to it */
+  margin-bottom: 1rem;
+}
+
+.first-image,
+.second-image {
+  max-width: 40vw;
+  max-height: 40vh;
+  object-fit: cover;
 }
