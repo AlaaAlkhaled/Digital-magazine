@@ -225,3 +225,19 @@ nav li {
     flex-direction: column;
     gap: 2rem;
   }
+
+  .secondArticle-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align images to the bottom */
+    position: relative; /* Make this container relative so the article content can be positioned relative to it */
+    margin-bottom: 1rem;
+  }
+  
+  .first-image,
+  .second-image {
+    max-width: 40vw;
+    max-height: 40vh;
+    object-fit: cover;
+  }
+  
