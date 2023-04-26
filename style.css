@@ -176,29 +176,29 @@ nav li {
 
 .card-title {
   position: absolute;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit !important;
+  border-bottom-right-radius: inherit !important;
 }
 
-.page3 .cards .card1 {
+.card1 {
   background-image: url(img/10.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page3 .cards .card2 {
+.card2 {
   background-image: url(img/14.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page3 .cards .card3 {
+.card3 {
   background-image: url(img/17.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page3 .cards .card4 {
+.card4 {
   background-image: url(img/portomoniz-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -219,6 +219,13 @@ nav li {
   color: white;
   padding: 2rem;
   width: 100%;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  transform: scale(1.05);
 }
 
 .article-header {
