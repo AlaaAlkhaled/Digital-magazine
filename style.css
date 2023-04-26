@@ -246,44 +246,28 @@ nav li {
   margin-top: 1rem;
 }
 
-.article-images .paragraph-1 {
+.article-images .paragraph {
   display: flex;
-  justify-content: center;
-  align-self: flex-start;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.article-images .paragraph-1 .center-image {
-  max-width: 40vw;
-  min-width: 200px;
-}
-
-.article-images .paragraph-1 p {
+.article-images .paragraph p {
   display: flex;
   text-align: left;
-  align-content: center;
   align-self: center;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: rgb(255, 255, 255);
-  max-width: 52ch;
-  min-width: 30ch;
+  max-width: 50ch;
 }
 
-.left-image,
-.right-image {
-  max-width: 20vw;
-  max-height: 20vh;
-  object-fit: cover;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-
-.center-image {
+.article-images .paragraph img {
+  display: flex;
+  object-fit: contain;
   max-width: 40vw;
-  height: 40vh;
-  object-fit: cover;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  min-height: 100%;
 }
 
 .article-content {
