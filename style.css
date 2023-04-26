@@ -199,7 +199,7 @@ nav li {
 }
 
 .page3 .cards .card4 {
-  background-image: url(img/12.jpg);
+  background-image: url(img/portomoniz-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -226,13 +226,40 @@ nav li {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  font-size: 2rem;
+  color: salmon;
 }
 
 .article-images {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.article-images .paragraph-1 {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+
+.article-images .paragraph-1 .center-image {
+  max-width: 40vw;
+  min-width: 200px;
+}
+
+.article-images .paragraph-1 p {
+  display: flex;
+  text-align: left;
+  align-content: center;
+  align-self: center;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  max-width: 52ch;
+  min-width: 30ch;
 }
 
 .left-image,
