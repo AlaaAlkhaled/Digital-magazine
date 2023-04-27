@@ -171,7 +171,7 @@ nav li {
 }
 
 .card1 {
-  background-image: url(img/10.jpg);
+  background-image: url(img/6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -220,21 +220,15 @@ nav li {
 
 /* -------------------- Essential Attractions Articles  --------------------*/
 
-.essential-articles .article-header {
+.article #PortoMoniz-Header {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-self: center;
+  justify-content: right;
   font-size: 3rem;
   color: rgb(248, 83, 83);
-  grid-column: 1 / 4;
-  grid-row: 1;
 }
 
-.essential-articles {
-  height: 100%;
-}
-
-.essential-articles .article-section {
+/* .article .article-section {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -242,7 +236,7 @@ nav li {
   flex-wrap: wrap;
   margin-top: 4em;
   margin-bottom: 4em;
-}
+} */
 
 .essential-articles .article-section p {
   font-family: "Roboto Slab", serif;
@@ -264,25 +258,35 @@ nav li {
   min-height: 100%;
 }
 
+/* ---------Funchal Article--------- */
+
+.article #Funchal-Header {
+  display: flex;
+  justify-self: flex-start;
+  font-size: 3rem;
+  color: rgb(248, 83, 83);
+  grid-column: 1 / 5;
+}
+
 .essential-articles #Funchal {
   min-width: 100%;
   display: grid;
-  grid-template-columns: repeat(autofit, 1fr);
+  grid-template-columns: repeat(autofill, 1fr);
   grid-auto-rows: minmax(1fr, 50vh);
-  grid-gap: 2em;
+  grid-gap: 1em;
 }
 
 .essential-articles #Funchal-image-1 {
-  max-height: 100%;
-  object-fit: cover;
+  min-height: 100%;
   min-width: 45vw;
+  object-fit: cover;
   justify-self: center;
   grid-column: 1 / 3;
   grid-row: 2 / 4;
 }
 
 .essential-articles #Funchal-image-2 {
-  max-height: 100%;
+  min-height: 100%;
   object-fit: cover;
   min-width: 45vw;
   justify-self: center;
@@ -290,37 +294,131 @@ nav li {
   grid-row: 3 / 5;
 }
 
+.essential-articles #Funchal-image-3 {
+  min-height: 100%;
+  object-fit: cover;
+  min-width: 45vw;
+  justify-self: center;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+
 .essential-articles #Funchal-paragraph-1 {
   display: flex;
-  justify-self: center;
+  justify-self: flex-start;
   align-items: flex-start;
+  text-align: left;
   height: 100%;
-  max-width: 55ch;
+  max-width: 60ch;
   grid-column: 3 / 5;
   grid-row: 2 / 3;
 }
 
 .essential-articles #Funchal-paragraph-2 {
   display: flex;
-  justify-self: flex-end;
+  justify-self: center;
   align-self: flex-start;
-  text-align: right;
-  max-height: 100%;
-  max-width: 50ch;
+  text-align: left;
+  height: 100%;
+  max-width: 60ch;
   grid-column: 1 / 3;
   grid-row: 4 / 5;
 }
 
 .essential-articles #Funchal-paragraph-3 {
   display: flex;
-  justify-self: flex-end;
+  justify-self: flex-start;
   align-self: flex-start;
-  max-height: 100%;
-  max-width: 55ch;
+  height: 100%;
+  max-width: 65ch;
   grid-column: 3 / 5;
   grid-row: 5 / 6;
-  text-align: right;
+  text-align: left;
 }
+
+/* ----------- Ponta do Sol Article ------------ */
+
+.article #Ponta-do-Sol {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+  grid-auto-rows: minmax(1fr, 50vh);
+  grid-gap: 1em;
+  margin-bottom: 2em;
+}
+
+.article #Ponta-do-Sol p {
+  font-family: "Roboto Slab", serif;
+  /* font-size: 1.125rem; */
+  font-weight: 300;
+  background: none;
+}
+
+.article #Ponta-do-Sol-Header {
+  grid-column: 1 / 6;
+  grid-row: 1;
+  justify-self: flex-start;
+  font-size: 3rem;
+  color: rgb(248, 83, 83);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.article #PDS-image-1 {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.article-section #Ponta-do-Sol-Paragraph-1 {
+  display: flex;
+  justify-self: start;
+  align-self: flex-end;
+  text-align: left;
+  grid-column: 3 / 6;
+  grid-row: 2 / 3;
+  max-width: 60ch;
+  font-size: 1.125rem;
+}
+
+.article #PDS-image-2 {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  grid-column: 3 / 6;
+  grid-row: 3 / 4;
+}
+
+.article-section #Ponta-do-Sol-Paragraph-2 {
+  display: flex;
+  justify-self: start;
+  text-align: right;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  max-width: 60ch;
+  font-size: 1.125rem;
+}
+
+.article #PDS-image-3 {
+  display: flex;
+  max-width: 100%;
+  object-fit: cover;
+  grid-column: 1 / 6;
+  grid-row: 5 / 6;
+}
+
+.article-section #Ponta-do-Sol-Paragraph-3 {
+  display: flex;
+  grid-column: 4 / 6;
+  grid-row: 4 / 5;
+  font-size: 2rem;
+}
+
+/* ----------- Porto Moniz Article ------------- */
 
 .essential-articles #PortoMonizSection {
   display: flex;
@@ -375,22 +473,8 @@ nav li {
   gap: 2rem;
 }
 
-.secondArticle-images {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Align images to the bottom */
-  position: relative; /* Make this container relative so the article content can be positioned relative to it */
-  margin-bottom: 1rem;
-}
-
-.first-image,
-.second-image {
-  max-width: 40vw;
-  max-height: 40vh;
-  object-fit: cover;
-}
-
 /* ------------------------------------------ Page 4 -----------------------------------------*/
+
 .page4 {
   background-image: url("img/9.jpg");
   background-size: cover;
