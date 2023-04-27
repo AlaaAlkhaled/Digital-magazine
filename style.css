@@ -332,3 +332,71 @@ nav li {
   max-height: 40vh;
   object-fit: cover;
 }
+
+/* ------------------------------------------ Page 4 -----------------------------------------*/
+.page4 {
+  background-image: url("img/9.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  padding-left: 3rem; /* Add some padding to the left side of the content */
+  margin-top: 3rem;
+}
+
+.page4 h1 {
+  font-size: 5rem; /* Adjust the font size to make the h1 bigger */
+  padding-top: 2rem; /* Add some space between the h1 and the paragraph */
+  margin-bottom: 2rem;
+}
+
+.page4-content {
+  max-width: 40%; /* Limit the width of the content to 50% */
+  padding-top: 2rem;
+}
+
+/*---------------------------------------- Page 5 ------------------------------------------*/
+.page5 {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 100vh;
+}
+
+.photography-images {
+  display: inline-flex;
+}
+
+.image-container {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.photography-images img {
+  width: 60vw; /* Change the width to 100% */
+  height: auto;
+  max-height: 100vh; /* Change the maximum height to 100vh */
+  border: 5px solid #fff; /* Add a border around the images */
+  border-radius: 10px; /* Add a border radius */
+  display: block;
+}
+
+
+.image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.image-description p {
+  color: white; /* Set the paragraph text color */
+  text-align: center; /* Center-align the text */
+  margin: 0; /* Remove the default margin */
+  font-size: 0.9rem; /* Adjust the font size of the paragraph */
+}
+
+
