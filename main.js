@@ -18,9 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
     article.style.display = "none";
   });
 
-  document.getElementById("card1").addEventListener("click", () => showArticle("article1"));
-  document.getElementById("card2").addEventListener("click", () => showArticle("article2"));
-  document.getElementById("card3").addEventListener("click", () => showArticle("article3"));
+  document
+    .getElementById("card1")
+    .addEventListener("click", () => showArticle("article1"));
+  document
+    .getElementById("card2")
+    .addEventListener("click", () => showArticle("article2"));
+  document
+    .getElementById("card3")
+    .addEventListener("click", () => showArticle("article3"));
+  document
+    .getElementById("card4")
+    .addEventListener("click", () => showArticle("article4"));
 });
 
 const images = [
