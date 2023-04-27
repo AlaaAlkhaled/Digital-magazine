@@ -256,7 +256,7 @@ nav li {
 
 .article-images .paragraph p {
   display: flex;
-  text-align: left;
+  text-align: center;
   align-self: center;
   font-size: 1.125rem;
   color: rgb(255, 255, 255);
