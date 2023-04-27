@@ -4,6 +4,8 @@
 
 /* ------------------------------------------ GLOBAL SETTINGS ---------------------------------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -249,7 +251,7 @@ nav li {
   margin-top: 1em;
 }
 
-.article-images .article-section {
+.essential-articles .article-section {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -259,24 +261,31 @@ nav li {
   margin-bottom: 4em;
 }
 
-.article-images .article-section p {
+.essential-articles .article-section p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
   display: flex;
   text-align: left;
   align-self: center;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
   max-width: 50ch;
-  padding: 3em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
-.article-images .article-section img {
+.essential-articles .article-section img {
   display: flex;
   object-fit: contain;
   max-width: 40vw;
   min-height: 100%;
 }
 
-.article-images #PortoMonizSection {
+.essential-articles #funchal {
+  display: grid;
+}
+
+.essential-articles #PortoMonizSection {
   display: flex;
   flex-direction: row-reverse;
 }
