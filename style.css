@@ -1,3 +1,11 @@
+/* ------------------------------------------ READ ME-----------------------------------------*/
+
+/*               ^ here we can add some useful information about our shared project.           */
+
+/* ------------------------------------------ GLOBAL SETTINGS ---------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +41,8 @@ body::before {
 body p {
   font-size: 1.2rem;
 }
-/* page 1 */
+
+/* ------------------------------------------ Page 1 -----------------------------------------*/
 
 header {
   display: flex;
@@ -65,7 +74,7 @@ nav li {
   height: 100vh;
 }
 
-/*page 2 */
+/* ------------------------------------------ Page 2 -----------------------------------------*/
 
 .page2 {
   display: flex;
@@ -100,9 +109,9 @@ nav li {
   max-width: 60ch;
 }
 
-/* page 3 */
+/* ------------------------------------------ Page 3 -----------------------------------------*/
 
-.page3 img {
+.page3 .section-headline {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +127,8 @@ nav li {
   min-height: 100vh;
   margin-top: 2em;
 }
+
+/* -------------------- Essential Attractions Cards  --------------------*/
 
 .page3 .cards {
   margin-left: 2rem;
@@ -228,46 +239,55 @@ nav li {
   transform: scale(1.05);
 }
 
+/* -------------------- Essential Attractions Articles  --------------------*/
+
 .article-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  font-size: 2rem;
-  color: salmon;
+  font-size: 2.5rem;
+  color: rgb(248, 83, 83);
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 
-.article-images {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.article-images .paragraph {
+.essential-articles .article-section {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
-.article-images .paragraph p {
+.essential-articles .article-section p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
   display: flex;
   text-align: center;
   align-self: center;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
   max-width: 50ch;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
-.article-images .paragraph img {
+.essential-articles .article-section img {
   display: flex;
   object-fit: contain;
   max-width: 40vw;
   min-height: 100%;
+}
+
+.essential-articles #funchal {
+  display: grid;
+}
+
+.essential-articles #PortoMonizSection {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .article-content {
@@ -280,7 +300,7 @@ nav li {
 .articles-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  margin-top: 4em;
 }
 
 .article-Eira p {
@@ -331,4 +351,79 @@ nav li {
   max-width: 40vw;
   max-height: 40vh;
   object-fit: cover;
+}
+
+/* ------------------------------------------ Page 4 -----------------------------------------*/
+.page4 {
+  background-image: url("img/9.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3rem; /* Add some padding to the left side of the content */
+  margin-top: 3rem;
+}
+
+.page4 h1 {
+  font-size: 5rem; /* Adjust the font size to make the h1 bigger */
+  padding-top: 2rem; /* Add some space between the h1 and the paragraph */
+  margin-bottom: 2rem;
+}
+
+.page4-content {
+  max-width: 40%; /* Limit the width of the content to 50% */
+  padding-top: 2rem;
+}
+
+.scroll-indicator {
+  padding-bottom: 2rem;
+}
+
+.scroll-indicator p {
+  font-size: 1.2rem;
+}
+
+/*---------------------------------------- Page 5 ------------------------------------------*/
+.page5 {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 100vh;
+}
+
+.photography-images {
+  display: inline-flex;
+}
+
+.image-container {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.photography-images img {
+  width: 60vw; /* Change the width to 100% */
+  height: auto;
+  max-height: 100vh; /* Change the maximum height to 100vh */
+  border: 5px solid #fff; /* Add a border around the images */
+  border-radius: 10px; /* Add a border radius */
+  display: block;
+}
+
+.image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.image-description p {
+  color: white; /* Set the paragraph text color */
+  text-align: center; /* Center-align the text */
+  margin: 0; /* Remove the default margin */
+  font-size: 0.9rem; /* Adjust the font size of the paragraph */
 }

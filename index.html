@@ -15,6 +15,8 @@
   </head>
   <body>
     <main>
+      <!------------------------ Page 1  ---------------------->
+
       <div class="page1">
         <header>
           <h2>Madeira Wanderlust</h2>
@@ -27,6 +29,9 @@
           </nav>
         </header>
       </div>
+
+      <!------------------------ Page 2  ---------------------->
+
       <div class="page2">
         <h3>Welcome to Madeira</h3>
         <p>
@@ -38,8 +43,20 @@
           sure you will be fascinated by them as well.
         </p>
       </div>
+
+      <!------------------------ Page 3  ---------------------->
+
+      <!---- Essential Attractions Headline ---->
+
       <div class="page3">
-        <img src="img/Headline.svg" alt="" />
+        <img
+          src="img/Headline.svg"
+          alt="Section Headline"
+          class="section-headline"
+        />
+
+        <!---- Essential Attractions Cards ---->
+
         <div class="cards">
           <div class="card1" id="card1">
             <p class="card-title">Funchal</p>
@@ -54,33 +71,33 @@
             <p class="card-title">Porto Moniz</p>
           </div>
         </div>
-        <!-- Add the articles below the cards -->
+
+        <!---- Essential Attractions Articles ---->
+
         <div class="articles-container">
           <div class="article" id="article1">
             <div class="article-header">
-              <h2>Funchal Article</h2>
+              <h2>Funchal</h2>
             </div>
-            <div class="article-images">
-              <img src="/img/19.jpg" alt="" class="left-image" />
-              <img src="/img/13.jpg" alt="" class="center-image" />
-              <img src="/img/15.jpg" alt="" class="right-image" />
-            </div>
-            <div class="article-content">
-              <p>
-                Funchal is the enchanting capital of the island of Madeira. With
-                its obvious charm and attraction the dynamic center of the
-                Archipelago is nestled along the Atlantic and resembles a
-                natural amphitheatre. It has a rich history that combines
-                tradition, culture, and European internationalization while
-                remaining in tune with the beautiful surroundings. Funchal
-                derives its name from the plentiful sweet-smelling wild herb
-                fennel and has long been a significant commercial centre in the
-                Atlantic, with important local products like sugar and wine
-                supporting its growing economy. This fascinating city, made up
-                of ten churches, has a multitude of historical landmarks,
-                museums, recreational places, beautiful landscaping, and
-                stunning views.
-              </p>
+            <div class="essential-articles" id="Funchal">
+              <div class="article-section">
+                <img src="/img/19.jpg" alt="image 1" />
+                <p>
+                  Funchal is the enchanting capital of the island of Madeira.
+                  With its obvious charm and attraction the dynamic center of
+                  the Archipelago is nestled along the Atlantic and resembles a
+                  natural amphitheatre. It has a rich history that combines
+                  tradition, culture, and European internationalization while
+                  remaining in tune with the beautiful surroundings. Funchal
+                  derives its name from the plentiful sweet-smelling wild herb
+                  fennel and has long been a significant commercial centre in
+                  the Atlantic, with important local products like sugar and
+                  wine supporting its growing economy. This fascinating city,
+                  made up of ten churches, has a multitude of historical
+                  landmarks, museums, recreational places, beautiful
+                  landscaping, and stunning views.
+                </p>
+              </div>
             </div>
           </div>
           <div class="article" id="article2">
@@ -146,9 +163,9 @@
             <div class="article-header">
               <h2>Porto Moniz</h2>
             </div>
-            <div class="article-images">
-              <div class="paragraph">
-                <img src="/img/portomoniz.jpg" alt="" class="center-image" />
+            <div class="essential-articles">
+              <div class="article-section">
+                <img src="img/portomoniz.jpg" alt="image 1" />
                 <p>
                   Located in the north of the Island of Madeira, Porto Moniz is
                   a municipality that has some of the most beautiful sceneries
@@ -157,20 +174,17 @@
                   of its picturesque parishes, which overflow with rich customs.
                 </p>
               </div>
-              <div class="paragraph">
+              <div class="article-section" id="PortoMonizSection">
+                <img src="img/naturalpools.jpg" alt="image 2" />
+
                 <p>
                   This whole region is deeply marked by the botanical diversity
                   of the Laurissilva Forest, which from its height confronts the
                   imposing northern sea, through its ridges, cliffs and coves.
                 </p>
-                <img src="/img/naturalpools.jpg" alt="" class="left-image" />
               </div>
-              <div class="paragraph">
-                <img
-                  src="/img/portomoniz-shore.jpg"
-                  alt=""
-                  class="right-image"
-                />
+              <div class="article-section">
+                <img src="img/portomoniz-shore.jpg" alt="image 3" />
                 <p>
                   You can't talk about Porto Moniz without mentioning the
                   natural pools in its volcanic rocks where their clear waters
@@ -183,8 +197,58 @@
         </div>
       </div>
 
-      <div class="page4"></div>
-      <div class="page5"></div>
+      <!------------------------Page 4  ---------------------->
+
+      <div class="page4">
+        <div class="page4-content">
+          <h1>Photography</h1>
+          <p>
+            Madeira Island is a photographer's paradise. For those looking to
+            capture the island's essence, we've listed five must-visit
+            viewpoints, each of these viewpoints offers a unique perspective of
+            Madeira's beauty, ensuring you'll return home with a collection of
+            stunning photographs to cherish forever.
+          </p>
+        </div>
+        <div class="scroll-indicator">
+          <p>Scroll to explore some amazing images from Madeira.</p>
+        </div>
+      </div>
+      <div class="page5">
+        <div class="photography-images">
+          <div class="image-container">
+            <img src="img/10.jpg" alt="" />
+            <div class="image-description">
+              <p>image 1 description</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/11.jpg" alt="" />
+            <div class="image-description">
+              <p>image 2 description</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/12.jpg" alt="" />
+            <div class="image-description">
+              <p>image 3 description</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/16.jpg" alt="" />
+            <div class="image-description">
+              <p>image 4 description</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/14.jpg" alt="" />
+            <div class="image-description">
+              <p>image 5 description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="page6"></div>
       <div class="page7"></div>
       <div class="page8"></div>
