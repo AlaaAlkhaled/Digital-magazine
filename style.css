@@ -130,7 +130,7 @@ nav li {
 
 /* -------------------- Essential Attractions Cards  --------------------*/
 
-.page3 .cards {
+.cards {
   margin-left: 2rem;
   margin-right: 2rem;
   display: flex;
@@ -160,29 +160,7 @@ nav li {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   max-width: 70ch;
-}
-
-.card1,
-.card2,
-.card3,
-.card4 {
-  border-radius: 20px;
-  width: calc(40% - 2rem);
-  height: 35vh;
-  background-position: center;
-  position: relative;
-}
-
-.page3 p {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #fff;
   font-size: 1.5rem;
-
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
