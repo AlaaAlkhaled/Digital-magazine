@@ -69,9 +69,8 @@ nav li {
 }
 
 .page1 {
-  background-image: url("img/homeScreen.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: rgba(0, 0, 0, 0.5);
+
   height: 100vh;
 }
 
@@ -159,7 +158,7 @@ nav li {
   text-align: center;
   color: #fff;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   max-width: 70ch;
   font-size: 1.5rem;
 }
@@ -211,11 +210,26 @@ nav li {
   width: 100%;
 }
 
+.card1,
+.card2,
+.card3,
+.card4 {
+  outline: 4px solid transparent;
+  transition: 0.3s;
+}
+
 .card1:hover,
 .card2:hover,
 .card3:hover,
 .card4:hover {
-  transform: scale(1.05);
+  outline: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.card1:active,
+.card2:active,
+.card3:active,
+.card4:active {
+  scale: 0.85;
 }
 
 /* -------------------- Essential Attractions Articles  --------------------*/
@@ -669,6 +683,7 @@ nav li {
 
 #card1:hover,
 #card2:hover,
-#card3:hover {
+#card3:hover,
+#card4:hover {
   transform: scale(1.05);
 }
