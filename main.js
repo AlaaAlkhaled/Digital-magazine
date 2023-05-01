@@ -1,3 +1,5 @@
+
+
 function showArticle(articleId) {
   // Hide all articles
   const articles = document.querySelectorAll(".article");
