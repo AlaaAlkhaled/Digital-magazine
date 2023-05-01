@@ -73,3 +73,33 @@ function updateImage() {
   img.src = images[currentIndex];
   description.textContent = descriptions[currentIndex];
 }
+
+const cards = document.querySelectorAll(".card");
+const articles = document.querySelectorAll(".activity-article");
+const overlay = document.createElement("div");
+
+overlay.classList.add("overlay");
+document.body.appendChild(overlay);
+
+function closeArticle() {
+  overlay.innerHTML = "";
+  overlay.style.display = "none";
+}
+
+cards.forEach((card, index) => {
+  card.addEventListener("click", () => {
+    const article = articles[index].cloneNode(true);
+    const closeButton = document.createElement("button");
+    closeButton.textContent = "Close";
+    closeButton.classList.add("close-button");
+
+    closeButton.addEventListener("click", closeArticle);
+
+    // Fix the issue by making the articles visible when they're cloned
+    article.style.display = "block";
+    
+    overlay.appendChild(article);
+    overlay.appendChild(closeButton);
+    overlay.style.display = "flex";
+  });
+});
