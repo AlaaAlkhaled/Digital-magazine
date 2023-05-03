@@ -1,3 +1,9 @@
+//Constants for the essential attractions cards
+const eaCard1 = document.getElementById("card1");
+const eaCard2 = document.getElementById("card2");
+const eaCard3 = document.getElementById("card3");
+const eaCard4 = document.getElementById("card4");
+
 //Make the nav buttons scroll to certain sections
 const homeBtn = document.querySelector("#homeBtn");
 const attractionsBtn = document.querySelector("#attractionsBtn");
@@ -12,6 +18,8 @@ function scrollToSection() {
   homeSection.scrollIntoView({ behavior: "smooth" });
 }
 
+//Make the essential attractions card jump to the article once pressed
+
 function showArticle(articleId) {
   // Hide all articles
   const articles = document.querySelectorAll(".article");
@@ -22,6 +30,7 @@ function showArticle(articleId) {
   // Show the clicked article
   const article = document.getElementById(articleId);
   article.style.display = "block";
+  article.scrollIntoView({ behavior: "smooth" });
 }
 
 // Wait for the DOM to be fully loaded before adding event listeners
@@ -32,18 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
     article.style.display = "none";
   });
 
-  document
-    .getElementById("card1")
-    .addEventListener("click", () => showArticle("article1"));
-  document
-    .getElementById("card2")
-    .addEventListener("click", () => showArticle("article2"));
-  document
-    .getElementById("card3")
-    .addEventListener("click", () => showArticle("article3"));
-  document
-    .getElementById("card4")
-    .addEventListener("click", () => showArticle("article4"));
+  eaCard1.addEventListener("click", () => showArticle("article1"));
+  eaCard2.addEventListener("click", () => showArticle("article2"));
+  eaCard3.addEventListener("click", () => showArticle("article3"));
+  eaCard4.addEventListener("click", () => showArticle("article4"));
 });
 
 const images = [

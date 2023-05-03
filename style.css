@@ -952,7 +952,7 @@ nav li {
   }
 }
 
-/*---------------------------------------- Page 7 ------------------------------------------*/
+/*---------------------------------------- Page 7 | Culture ------------------------------*/
 
 .page7 {
   display: grid;
@@ -1026,4 +1026,73 @@ nav li {
   align-items: center;
   grid-column: 4 / 7;
   grid-row: 4 / 6;
+}
+
+/*------------------------------- Page 7 | Travelers' Stories --------------------------*/
+
+.page8 {
+  display: flex;
+
+  flex-direction: column;
+  background-image: url("img/17.jpg");
+  background-position: center;
+
+  background-size: cover;
+  height: 100vh;
+}
+
+.title-travelers {
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+.page8 span {
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.line2 {
+  display: block;
+  text-align: center;
+}
+
+.stories-cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.stories-cards img {
+  width: 30vw;
+  border-radius: 80px;
+}
+
+.traveler-story-1:hover,
+.traveler-story-2:hover {
+  transform: scale(1.05);
+}
+
+.traveler-story-1:hover span,
+.traveler-story-2:hover span {
+  font-weight: bold;
+}
+
+.traveler-story-1:hover img,
+.traveler-story-2:hover img {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.traveler-story-1 p,
+.traveler-story-2 p {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.traveler-story-1 span,
+.traveler-story-2 span {
+  font-size: 24px;
+  font-weight: 500;
 }
