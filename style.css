@@ -974,6 +974,7 @@ nav li {
   grid-column: 1 / 7;
   grid-row: 1 / 2;
   mix-blend-mode: difference;
+  filter: brightness(1.2);
 }
 
 .page7 .history-card-1 {
