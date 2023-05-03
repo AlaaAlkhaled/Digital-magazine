@@ -838,7 +838,7 @@ nav li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
   justify-content: center;
@@ -864,13 +864,13 @@ nav li {
 
 .activity-article h2 {
   font-size: 2rem; /* Adjust the title font size */
-  margin-bottom: 1rem; /* Add some margin below the title */
+  margin-bottom: 0.5rem; /* Add some margin below the title */
   text-align: center; /* Center the title */
 }
 
 .activity-article img {
   max-width: 100%;
-  max-height: 50vh;
+  max-height: 40vh;
   display: block;
   margin: 0 auto 1rem;
   position: relative; /* Add this property */
@@ -878,7 +878,7 @@ nav li {
 }
 
 .activity-article p {
-  max-width: 50%; /* Add max-width to the paragraph */
+  max-width: 60%; /* Add max-width to the paragraph */
   margin-left: auto; /* Center the paragraph */
   margin-right: auto;
   line-height: 1.5; /* Add line-height to improve readability */
@@ -910,7 +910,7 @@ nav li {
 }
 
 .animated-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 3rem;
   color: transparent;
   background-image: linear-gradient(
@@ -942,6 +942,7 @@ nav li {
 
   .activity-article p {
     max-width: 80%; /* Increase the max-width of the paragraphs for smaller screens */
+    font-size: 0.7rem;
   }
 
   @media screen and (max-width: 768px) {
