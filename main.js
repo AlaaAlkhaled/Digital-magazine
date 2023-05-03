@@ -1,4 +1,16 @@
+//Make the nav buttons scroll to certain sections
+const homeBtn = document.querySelector("#homeBtn");
+const attractionsBtn = document.querySelector("#attractionsBtn");
 
+homeBtn.addEventListener("click", scrollToSection);
+attractionsBtn.addEventListener("click", () => {
+  const attractionsSection = document.getElementById("attractionsSection");
+  attractionsSection.scrollIntoView({ behavior: "smooth" });
+});
+function scrollToSection() {
+  const homeSection = document.getElementById("main-header");
+  homeSection.scrollIntoView({ behavior: "smooth" });
+}
 
 function showArticle(articleId) {
   // Hide all articles
@@ -99,10 +111,9 @@ cards.forEach((card, index) => {
 
     // Fix the issue by making the articles visible when they're cloned
     article.style.display = "block";
-    
+
     overlay.appendChild(article);
     overlay.appendChild(closeButton);
     overlay.style.display = "flex";
   });
 });
-
