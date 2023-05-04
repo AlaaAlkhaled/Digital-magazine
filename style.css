@@ -1108,8 +1108,6 @@ nav li {
   display: flex;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  height: 100%;
-  width: 100%;
   object-fit: contain;
   grid-column: 4 / 7;
   grid-row: 11 / 15;
@@ -1151,11 +1149,8 @@ nav li {
 
 .page7 #toast-image {
   object-fit: contain;
-  justify-self: flex-start;
-  justify-content: flex-start;
-  justify-items: flex-start;
-  grid-column: 1 / 6;
-  grid-row: 15 / 17;
+  grid-column: 1 / 5;
+  grid-row: 15 / 18;
 }
 
 /*------------------------------- Page 7 | Travelers' Stories --------------------------*/
