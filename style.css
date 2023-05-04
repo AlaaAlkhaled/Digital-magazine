@@ -1106,8 +1106,6 @@ nav li {
 
 .page7 #bastardo-image {
   display: flex;
-  grid-column: 1 / 4;
-  grid-row: 11/12;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: 100%;
