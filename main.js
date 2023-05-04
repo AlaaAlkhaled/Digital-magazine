@@ -118,3 +118,30 @@ cards.forEach((card, index) => {
     overlay.style.display = "flex";
   });
 });
+
+//Travelers stories
+document.addEventListener("DOMContentLoaded", function () {
+  const storyCards = document.querySelectorAll(".story-card");
+  const storyModal = document.getElementById("storyModal");
+  const closeModal = document.querySelector(".close");
+  const modalStoryContent = document.getElementById("modalStoryContent");
+
+  storyCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const storyId = card.getAttribute("data-story");
+      const storyContent = document.getElementById(storyId);
+      modalStoryContent.innerHTML = storyContent.innerHTML;
+      storyModal.style.display = "block";
+    });
+  });
+
+  closeModal.addEventListener("click", () => {
+    storyModal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === storyModal) {
+      storyModal.style.display = "none";
+    }
+  });
+});
