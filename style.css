@@ -1113,6 +1113,8 @@ nav li {
   object-fit: contain;
   grid-column: 4 / 7;
   grid-row: 11 / 15;
+  filter: contrast(1.125);
+  rotate: 15deg;
 }
 
 .page7 .rec-3 {
@@ -1176,7 +1178,7 @@ nav li {
   grid-row: 13 / 17;
   mix-blend-mode: screen;
   filter: brightness(100%);
-  margin-left: 2em;
+  margin-left: 1em;
   margin-top: 2em;
 }
 
@@ -1201,7 +1203,8 @@ nav li {
 }
 
 .page7 #sign-toast {
-  grid-column: 3 / 6;
+  justify-self: center;
+  grid-column: 2 / 6;
   grid-row: 17 / 18;
 }
 
