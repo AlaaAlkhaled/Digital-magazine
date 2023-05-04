@@ -1164,6 +1164,7 @@ nav li {
   mix-blend-mode: screen;
   filter: brightness(100%);
   max-width: 65ch;
+  margin-bottom: 2em;
 }
 
 .page7 #culture-paragraph-4 {
@@ -1175,7 +1176,8 @@ nav li {
   grid-row: 13 / 17;
   mix-blend-mode: screen;
   filter: brightness(100%);
-  padding-left: 1em;
+  margin-left: 2em;
+  margin-top: 2em;
 }
 
 .page7 #culture-paragraph-5 {
