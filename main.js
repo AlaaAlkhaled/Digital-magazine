@@ -55,11 +55,11 @@ const images = [
   "img/3.jpg",
 ];
 const descriptions = [
-  "image 1 description",
-  "image 2 description",
-  "image 3 description",
-  "image 4 description",
-  "image 5 description",
+  "Island's highest point",
+  "Stunning landscape",
+  "Natural pool",
+  "Dramatic cliffs",
+  "Stunning gardens",
 ];
 let currentIndex = 0;
 
