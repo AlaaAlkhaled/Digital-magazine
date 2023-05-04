@@ -1089,15 +1089,15 @@ nav li {
   background-position: center;
 
   background-size: cover;
-  height: 110vh;
+  height: 100vh;
 }
 
 .title-travelers {
   padding: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10px;
 }
 .page8 span {
-  font-size: 4rem;
+  font-size: 40px;
   display: block;
   text-align: center;
   font-weight: bold;
@@ -1110,6 +1110,7 @@ nav li {
 
 .stories-cards {
   display: flex;
+  position: sticky;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -1177,7 +1178,9 @@ nav li {
 
 .modal-content img {
   width: 50vw;
-
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
   padding: 5px;
 }
 
@@ -1197,9 +1200,10 @@ nav li {
 }
 .story-section p {
   color: white;
-  max-width: 60ch;
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 100%;
 }
 
 .close {
@@ -1215,7 +1219,7 @@ nav li {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
