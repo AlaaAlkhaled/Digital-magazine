@@ -1097,11 +1097,12 @@ nav li {
   display: flex;
   justify-self: center;
   align-items: center;
-  text-align: right;
-  grid-column: 2 / 7;
+  text-align: left;
+  grid-column: 3 / 7;
   grid-row: 9 / 11;
   mix-blend-mode: screen;
   filter: brightness(100%);
+  padding-right: 2em;
 }
 
 .page7 #bastardo-image {
@@ -1115,8 +1116,35 @@ nav li {
 
 .page7 .rec-3 {
   display: flex;
-  grid-column: 5 / 7;
-  grid-row: 13 / 15;
+  grid-column: 5 / 6;
+  grid-row: 13 / 14;
+  background-color: rgba(248, 83, 83, 0.6);
+  mix-blend-mode: difference;
+  object-fit: contain;
+}
+
+.page7 .rec-4 {
+  display: flex;
+  grid-column: 4 / 5;
+  grid-row: 12 / 13;
+  background-color: rgba(248, 83, 83, 0.6);
+  mix-blend-mode: difference;
+  object-fit: contain;
+}
+
+.page7 .rec-5 {
+  display: flex;
+  grid-column: 6 / 7;
+  grid-row: 16 / 17;
+  background-color: rgba(248, 83, 83, 0.6);
+  mix-blend-mode: difference;
+  object-fit: contain;
+}
+
+.page7 .rec-6 {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 17;
   background-color: rgba(248, 83, 83, 0.6);
   mix-blend-mode: difference;
   object-fit: contain;
@@ -1124,42 +1152,53 @@ nav li {
 
 .page7 #culture-paragraph-3 {
   display: flex;
-  justify-self: center;
+  justify-self: flex-start;
   align-items: flex-end;
   text-align: left;
   grid-column: 1 / 4;
-  grid-row: 11 / 13;
+  grid-row: 10 / 13;
   mix-blend-mode: screen;
   filter: brightness(100%);
+  max-width: 65ch;
 }
 
 .page7 #culture-paragraph-4 {
   display: flex;
-  justify-self: center;
+  justify-self: flex-start;
   align-items: flex-start;
   text-align: left;
   grid-column: 1 / 4;
-  grid-row: 13 / 15;
+  grid-row: 13 / 17;
   mix-blend-mode: screen;
   filter: brightness(100%);
+  padding-left: 1em;
 }
 
 .page7 #culture-paragraph-5 {
   display: flex;
-  justify-self: center;
-  align-items: flex-start;
+  justify-self: flex-start;
+  align-items: center;
   text-align: justify;
-  grid-column: 1 / 6;
-  grid-row: 17 / 18;
+  grid-column: 2 / 6;
+  grid-row: 18 / 20;
   mix-blend-mode: screen;
   filter: brightness(100%);
   max-width: 70ch;
 }
 
 .page7 #toast-image {
-  object-fit: contain;
+  display: flex;
   grid-column: 1 / 6;
   grid-row: 15 / 17;
+  object-fit: contain;
+  filter: saturate(1.25);
+}
+
+.page7 #signing-image {
+  display: flex;
+  object-fit: contain;
+  grid-column: 2 / 7;
+  grid-row: 17 / 19;
   filter: saturate(1.25);
 }
 
