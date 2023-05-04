@@ -48,18 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const images = [
-  "img/10.jpg",
-  "img/11.jpg",
-  "img/12.jpg",
-  "img/16.jpg",
-  "img/14.jpg",
+  "img/20.jpg",
+  "img/21.jpg",
+  "img/26.jpg",
+  "img/Cliff Madeira.jpg",
+  "img/3.jpg",
 ];
 const descriptions = [
-  "image 1 description",
-  "image 2 description",
-  "image 3 description",
-  "image 4 description",
-  "image 5 description",
+  "Island's highest point",
+  "Stunning landscape",
+  "Natural pool",
+  "Dramatic cliffs",
+  "Stunning gardens",
 ];
 let currentIndex = 0;
 
