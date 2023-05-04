@@ -980,6 +980,7 @@ nav li {
 /*---------------------------------------- Page 7 | Culture ------------------------------*/
 
 .page7 {
+  min-height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 30vh;
@@ -1135,19 +1136,22 @@ nav li {
 .page7 .rec-5 {
   display: flex;
   grid-column: 6 / 7;
-  grid-row: 16 / 17;
+  grid-row: 15 / 17;
   background-color: rgba(248, 83, 83, 0.6);
   mix-blend-mode: difference;
   object-fit: contain;
+  margin-top: 2.5em;
+  margin-bottom: -4em;
 }
 
 .page7 .rec-6 {
   display: flex;
   grid-column: 1 / 2;
-  grid-row: 17;
+  grid-row: 17 / 19;
   background-color: rgba(248, 83, 83, 0.6);
   mix-blend-mode: difference;
   object-fit: contain;
+  margin-bottom: 7em;
 }
 
 .page7 #culture-paragraph-3 {
@@ -1179,7 +1183,7 @@ nav li {
   justify-self: flex-start;
   align-items: center;
   text-align: justify;
-  grid-column: 2 / 6;
+  grid-column: 1 / 6;
   grid-row: 18 / 20;
   mix-blend-mode: screen;
   filter: brightness(100%);
@@ -1194,12 +1198,78 @@ nav li {
   filter: saturate(1.25);
 }
 
+.page7 #sign-toast {
+  grid-column: 3 / 6;
+  grid-row: 17 / 18;
+}
+
 .page7 #signing-image {
   display: flex;
   object-fit: contain;
   grid-column: 2 / 7;
   grid-row: 17 / 19;
   filter: saturate(1.25);
+}
+
+.page7 #culture-paragraph-6 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: justify;
+  grid-column: 4 / 7;
+  grid-row: 19 / 21;
+  mix-blend-mode: screen;
+  filter: brightness(100%);
+  max-width: 55ch;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+.page7 #culture-paragraph-7 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: left;
+  grid-column: 1 / 4;
+  grid-row: 22 / 24;
+  mix-blend-mode: screen;
+  filter: brightness(100%);
+  max-width: 55ch;
+  padding-left: 2em;
+}
+
+.page7 #fort-image {
+  display: flex;
+  object-fit: cover;
+  grid-column: 1 / 4;
+  grid-row: 20 / 22;
+  filter: saturate(1.25);
+}
+
+.page7 #old-funchal-image {
+  display: flex;
+  object-fit: cover;
+  grid-column: 4 / 7;
+  grid-row: 22;
+  filter: saturate(1.25);
+}
+
+.page7 .rec-7 {
+  display: flex;
+  grid-column: 6 / 7;
+  grid-row: 20;
+  background-color: rgba(248, 83, 83, 0.6);
+  mix-blend-mode: difference;
+  object-fit: contain;
+}
+
+.page7 .rec-8 {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 22;
+  background-color: rgba(248, 83, 83, 0.6);
+  mix-blend-mode: difference;
+  object-fit: contain;
 }
 
 /*------------------------------- Page 8 | Travelers' Stories --------------------------*/
