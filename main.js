@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const storyId = card.getAttribute("data-story");
       const storyContent = document.getElementById(storyId);
       modalStoryContent.innerHTML = storyContent.innerHTML;
-      storyModal.style.display = "block";
+      storyModal.style.display = "flex";
     });
   });
 
