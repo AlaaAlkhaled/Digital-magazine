@@ -713,7 +713,7 @@ nav li {
   width: 100%;
   height: auto;
   max-height: 100vh;
-  max-width: 60vw;
+  max-width: 70vw;
   border: 5px solid #fff;
   border-radius: 10px;
   object-fit: contain;
