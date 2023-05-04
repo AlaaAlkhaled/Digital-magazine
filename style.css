@@ -1106,12 +1106,8 @@ nav li {
 
 .page7 #bastardo-image {
   display: flex;
-<<<<<<< Updated upstream
   grid-column: 1 / 4;
   grid-row: 11/12;
-  mix-blend-mode: hard-light;
-=======
-<<<<<<< HEAD
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: 100%;
@@ -1162,12 +1158,6 @@ nav li {
   justify-items: flex-start;
   grid-column: 1 / 6;
   grid-row: 15 / 17;
-=======
-  grid-column: 1 / 4;
-  grid-row: 11/12;
-  mix-blend-mode: hard-light;
->>>>>>> a27d6ff8d95bb0d6b27272d6160b6d82e5776449
->>>>>>> Stashed changes
 }
 
 /*------------------------------- Page 7 | Travelers' Stories --------------------------*/
@@ -1265,7 +1255,6 @@ nav li {
   margin-right: 1rem;
   cursor: pointer;
   color: white;
-
 }
 
 .page10 .footer-links a {
