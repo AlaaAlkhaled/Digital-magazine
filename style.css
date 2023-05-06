@@ -131,11 +131,17 @@ nav li {
 .page2 h3 {
   font-size: 4rem;
   font-weight: bold;
-  color: rgb(226, 58, 58);
+  color: rgb(248, 83, 83);
+  mix-blend-mode: hard-light;
+  filter: brightness(0.95);
 }
 
 .page2 p {
-  max-width: 60ch;
+  font-family: "Roboto slab", serif;
+  display: flex;
+  text-align: left;
+  max-width: 67ch;
+  margin-top: 3em;
 }
 
 /* ------------------------------------------ Page 3 -----------------------------------------*/
@@ -147,6 +153,8 @@ nav li {
   scale: 0.8;
   width: 100%;
   margin-bottom: 2em;
+  mix-blend-mode: hard-light;
+  filter: brightness(0.95);
 }
 
 .page3 {
@@ -290,6 +298,8 @@ nav li {
   justify-self: flex-start;
   font-size: 3rem;
   color: rgb(248, 83, 83);
+  mix-blend-mode: hard-light;
+  filter: brightness(0.95);
   grid-column: 1 / 5;
 }
 
@@ -378,6 +388,8 @@ nav li {
   justify-self: flex-start;
   font-size: 3rem;
   color: rgb(248, 83, 83);
+  mix-blend-mode: hard-light;
+  filter: brightness(0.95);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -584,6 +596,8 @@ nav li {
   justify-content: right;
   font-size: 3rem;
   color: rgb(248, 83, 83);
+  mix-blend-mode: hard-light;
+  filter: brightness(0.95);
 }
 
 .essential-articles #PortoMonizSection {
