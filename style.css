@@ -132,8 +132,6 @@ nav li {
   font-size: 4rem;
   font-weight: bold;
   color: rgb(248, 83, 83);
-  mix-blend-mode: hard-light;
-  filter: brightness(0.95);
 }
 
 .page2 p {
@@ -153,8 +151,6 @@ nav li {
   scale: 0.8;
   width: 100%;
   margin-bottom: 2em;
-  mix-blend-mode: hard-light;
-  filter: brightness(0.95);
 }
 
 .page3 {
@@ -297,9 +293,9 @@ nav li {
   display: flex;
   justify-self: flex-start;
   font-size: 3rem;
-  color: rgb(248, 83, 83);
-  mix-blend-mode: hard-light;
-  filter: brightness(0.95);
+  color: #ffe900;
+  mix-blend-mode: difference;
+  filter: brightness(1.2);
   grid-column: 1 / 5;
 }
 
