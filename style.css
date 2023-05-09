@@ -842,15 +842,22 @@ nav li {
   font-size: 1.3rem;
   text-align: center;
   position: absolute;
+  bottom: 10px; /* Add this line to position h3 at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add this line to create a shadow behind the text */
 }
+
 @media screen and (max-width: 768px) {
   .card h3 {
     font-size: 0.9rem;
-    top: 10%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add this line to create a shadow behind the text on smaller screens */
   }
 }
+
 
 .card:hover img {
   opacity: 1;
@@ -912,10 +919,11 @@ nav li {
 }
 
 .activity-article p {
-  max-width: 60%; /* Add max-width to the paragraph */
+  max-width: 70%; /* Add max-width to the paragraph */
   margin-left: auto; /* Center the paragraph */
   margin-right: auto;
   line-height: 1.5; /* Add line-height to improve readability */
+  font-size: 1.1rem;
 }
 
 .close-button {
@@ -944,7 +952,7 @@ nav li {
 }
 
 .animated-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 3rem;
   color: transparent;
   background-image: linear-gradient(
@@ -976,7 +984,7 @@ nav li {
 
   .activity-article p {
     max-width: 80%; /* Increase the max-width of the paragraphs for smaller screens */
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   @media screen and (max-width: 768px) {
