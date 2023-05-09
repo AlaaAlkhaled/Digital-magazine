@@ -76,6 +76,11 @@ nav li {
   padding-left: 1rem;
 }
 
+nav li:hover {
+  text-decoration: underline;
+  scale: 1.05;
+}
+
 @media (min-width: 768px) {
   header h2 {
     font-size: 3rem;
@@ -739,8 +744,6 @@ nav li {
   -o-border-radius: 10px;
 }
 
-
-
 .image-description {
   position: absolute;
   bottom: 0;
@@ -869,7 +872,6 @@ nav li {
   }
 }
 
-
 .card:hover img {
   opacity: 1;
   transform: scale(1.1);
@@ -961,7 +963,6 @@ nav li {
   align-items: center;
   margin-bottom: 1rem;
 }
-
 
 .animated-title {
   font-size: 1.6rem;
@@ -1469,7 +1470,7 @@ nav li {
 
 .close:hover,
 .close:focus {
-  color: white;
+  color: rgb(248, 83, 83);
   text-decoration: none;
   cursor: pointer;
 }
