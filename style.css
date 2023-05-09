@@ -712,23 +712,34 @@ nav li {
 }
 
 .image-container {
-  margin-right: 1rem;
   position: relative;
   max-height: 70vh;
   overflow: hidden;
+  width: auto;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 .photography-images img {
   width: 100%;
   height: auto;
-  max-height: 100vh;
-  max-width: 70vw;
+  max-height: 90vh;
+  max-width: 80vw;
   border: 5px solid #fff;
   border-radius: 10px;
   object-fit: contain;
   display: block;
   margin: rem auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+
+
 
 .image-description {
   position: absolute;
@@ -911,7 +922,7 @@ nav li {
 
 .activity-article img {
   max-width: 100%;
-  max-height: 40vh;
+  max-height: 50vh;
   display: block;
   margin: 0 auto 1rem;
   position: relative; /* Add this property */
@@ -950,6 +961,7 @@ nav li {
   align-items: center;
   margin-bottom: 1rem;
 }
+
 
 .animated-title {
   font-size: 1.6rem;
