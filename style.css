@@ -714,7 +714,6 @@ nav li {
 .image-container {
   margin-right: 1rem;
   position: relative;
-  max-width: 80%;
   max-height: 70vh;
   overflow: hidden;
 }
