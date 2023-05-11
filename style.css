@@ -94,7 +94,7 @@ nav li:hover {
   }
 }
 
-.page1:before {
+/* .page1:before {
   content: "";
   position: absolute;
   top: 95%;
@@ -103,12 +103,15 @@ nav li:hover {
   height: 25vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
   pointer-events: none;
-}
+} */
 
 .page1 {
-  background-image: url("img/home1.jpg");
+  background-image: url("img/island.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
+  scale: 1;
   position: relative; /* Add this property */
 }
 

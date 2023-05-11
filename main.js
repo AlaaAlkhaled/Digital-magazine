@@ -159,9 +159,14 @@ function showScrollToTopButton() {
 
   if (window.pageYOffset > 20) {
     scrollToTopBtn.classList.add("show");
-    console.log("yes works");
-  } else {
-    scrollToTopBtn.classList.remove("show");
+    if (
+      document.body.scrollTop < 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
   }
 }
 
