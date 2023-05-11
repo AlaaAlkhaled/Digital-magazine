@@ -161,7 +161,7 @@ window.onscroll = function () {
 };
 
 function showScrollToTopButton() {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollToTopBtn.style.display = "block";
