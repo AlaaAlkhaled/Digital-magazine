@@ -148,25 +148,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Make the Traveller story cards scroll to their story once pressed
-
-storyCards.addEventListener("click", () => {
-  modalStoryContent.scrollIntoView({ behavior: "smooth" });
-});
-
 // Scroll to top button functions
 // Show the button when the user scrolls down 20px from the top of the document
-window.onscroll = function () {
+window.addEventListener("scroll", function () {
   showScrollToTopButton();
-};
+});
 
 function showScrollToTopButton() {
-  let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = "block";
+  if (window.pageYOffset > 20) {
+    scrollToTopBtn.classList.add("show");
+    console.log("yes works");
   } else {
-    scrollToTopBtn.style.display = "none";
+    scrollToTopBtn.classList.remove("show");
   }
 }
 
