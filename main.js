@@ -18,7 +18,7 @@ function scrollToSection() {
   homeSection.scrollIntoView({ behavior: "smooth" });
 }
 
-//Make the essential attractions card jump to the article once pressed
+//Make the essential attractions card scroll to the article once pressed
 
 function showArticle(articleId) {
   // Hide all articles
@@ -125,18 +125,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const storyModal = document.getElementById("storyModal");
   const closeModal = document.querySelector(".close");
   const modalStoryContent = document.getElementById("modalStoryContent");
-
+  const travelPage = document.getElementById("page8");
   storyCards.forEach((card) => {
     card.addEventListener("click", () => {
       const storyId = card.getAttribute("data-story");
       const storyContent = document.getElementById(storyId);
       modalStoryContent.innerHTML = storyContent.innerHTML;
       storyModal.style.display = "flex";
+      modalStoryContent.scrollIntoView({ behavior: "smooth" });
     });
   });
 
   closeModal.addEventListener("click", () => {
     storyModal.style.display = "none";
+    travelPage.scrollIntoView({ behavior: "smooth" });
   });
 
   window.addEventListener("click", (event) => {
@@ -145,3 +147,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//Make the Traveller story cards scroll to their story once pressed
+
+storyCards.addEventListener("click", () => {
+  modalStoryContent.scrollIntoView({ behavior: "smooth" });
+});
+
+// Scroll to top button functions
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function () {
+  showScrollToTopButton();
+};
+
+function showScrollToTopButton() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// Scroll to the top of the document when the button is clicked
+function scrollToTop() {
+  // Scroll to the top of the document with smooth animation
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
