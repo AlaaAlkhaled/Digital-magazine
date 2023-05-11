@@ -437,7 +437,7 @@ nav li:hover {
   display: flex;
   justify-self: flex-end;
   align-self: flex-end;
-  text-align: right;
+  text-align: left;
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   max-width: 65ch;
