@@ -56,7 +56,6 @@ header {
 
 header h2 {
   margin-right: 1rem;
-  font-family: "Playfair Display", serif;
   font-size: 2rem; /* Decrease the font size for smaller screens */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
