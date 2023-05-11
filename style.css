@@ -40,7 +40,7 @@ body::before {
 }
 
 body p {
-  font-size: 1.2rem;
+  font-size: 17px;
 }
 
 /* ------------------------------------------ Page 1 -----------------------------------------*/
@@ -94,7 +94,7 @@ nav li:hover {
   }
 }
 
-.page1:before {
+/* .page1:before {
   content: "";
   position: absolute;
   top: 95%;
@@ -103,12 +103,15 @@ nav li:hover {
   height: 25vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
   pointer-events: none;
-}
+} */
 
 .page1 {
-  background-image: url("img/home1.jpg");
+  background-image: url("img/island.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
+  scale: 1;
   position: relative; /* Add this property */
 }
 
@@ -197,7 +200,7 @@ nav li:hover {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 70ch;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .card-title {
@@ -277,7 +280,7 @@ nav li:hover {
   display: flex;
   text-align: center;
   align-self: center;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
   color: rgb(255, 255, 255);
   max-width: 50ch;
   /* margin-top: 3em;
@@ -756,7 +759,7 @@ nav li:hover {
   color: white;
   text-align: center;
   margin: 0;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 @media (min-width: 768px) {
@@ -935,7 +938,7 @@ nav li:hover {
   margin-left: auto; /* Center the paragraph */
   margin-right: auto;
   line-height: 1.5; /* Add line-height to improve readability */
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 .close-button {
@@ -996,7 +999,7 @@ nav li:hover {
 
   .activity-article p {
     max-width: 80%; /* Increase the max-width of the paragraphs for smaller screens */
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
   }
 
   @media screen and (max-width: 768px) {
@@ -1027,7 +1030,7 @@ nav li:hover {
 
 .page7 p {
   font-family: "Roboto Slab", serif;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 100;
   max-width: 85ch;
   color: #fff;
@@ -1381,7 +1384,7 @@ nav li:hover {
   .traveler-story-1 p,
   .traveler-story-2 p {
     text-align: center;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 }
 
@@ -1444,7 +1447,7 @@ nav li:hover {
 .story-section p {
   color: white;
   padding: 15px;
-  font-size: 16px;
+  /* font-size: 16px; */
   max-width: 60ch;
 }
 @media (max-width: 768px) {
