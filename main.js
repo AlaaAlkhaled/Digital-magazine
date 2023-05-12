@@ -6,9 +6,11 @@ const eaCard4 = document.getElementById("card4");
 
 //Make the nav buttons scroll to certain sections
 const homeBtn = document.querySelector("#homeBtn");
+const homeBtn2 = document.querySelector("#homeBtn2");
 const attractionsBtn = document.querySelector("#attractionsBtn");
 
 homeBtn.addEventListener("click", scrollToSection);
+homeBtn2.addEventListener("click", scrollToSection);
 attractionsBtn.addEventListener("click", () => {
   const attractionsSection = document.getElementById("attractionsSection");
   attractionsSection.scrollIntoView({ behavior: "smooth" });
