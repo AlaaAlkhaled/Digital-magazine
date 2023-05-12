@@ -1937,3 +1937,7 @@ nav li:hover {
 #scrollToTopBtn:hover {
   background-color: #888;
 }
+
+#scrollToTopBtn.show {
+  display: block;
+}
